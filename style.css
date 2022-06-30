@@ -14,6 +14,10 @@ ul {
 ul li a {
   text-decoration: none;
 }
+div img {
+  display: block;
+  width: 100%;
+}
 .flex-container {
   display: flex;
   max-width: 992px;
@@ -93,4 +97,52 @@ presentation .intro-text {
 #quem-somos p {
   margin-bottom: 10px;
   width: 90%;
+}
+#quem-somos img {
+  min-width: 420px;
+}
+.container-extern {
+  background-color: #122a57;
+  width: 100%;
+}
+#services {
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#services h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.list-of-services {
+  display: flex;
+  justify-content: space-between;
+}
+.list-of-services .item-services {
+  text-align: center;
+}
+.item-services a {
+  width: 220px;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 50px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #122a57;
+  font-size: 12px;
+  font-weight: 700;
+}
+.item-services p {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+}
+.item-services img {
+  width: 80%;
+  margin: auto;
 }
