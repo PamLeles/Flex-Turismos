@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+ul li a {
+  text-decoration: none;
+}
+.flex-container {
+  display: flex;
+  max-width: 992px;
+  margin: auto;
+}
+
+header {
+  background-color: #122a57;
+}
