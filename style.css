@@ -62,7 +62,7 @@ presentation .intro-text {
   font-size: 18px;
   margin-bottom: 10px;
 }
-.intro-text a {
+.btn {
   background-color: #122a57;
   color: #fff;
   text-align: center;
@@ -145,4 +145,48 @@ presentation .intro-text {
 .item-services img {
   width: 80%;
   margin: auto;
+}
+#planos {
+  flex-direction: column;
+  min-height: 100vh;
+}
+.list-planos {
+  display: flex;
+  align-items: flex-end;
+}
+.item-plano {
+  flex: 1;
+  border: 2px solid #122a57;
+  margin-right: 20px;
+  align-content: center;
+  padding: 10px;
+}
+.item-plano .btn {
+  margin: auto;
+  margin-bottom: 20px;
+}
+.item-plano h3 {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.item-plano h3::after {
+  content: "";
+  background-color: #122a57;
+  width: 100%;
+  height: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.lista {
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  display: flex;
+  list-style: square;
+}
+.tittle-plan {
+  margin-top: 5px;
 }
