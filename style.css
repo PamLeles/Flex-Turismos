@@ -8,6 +8,8 @@ ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  align-items: center;
 }
 ul li a {
   text-decoration: none;
@@ -24,13 +26,71 @@ header {
   height: 100px;
   display: flex;
   align-items: center;
-}
-hearder .list-items {
-  display: flex;
-}
-.list-items {
   color: #fff;
+}
+header .list-items {
+  display: flex;
+  max-width: 260px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-items li a {
+  color: #fff;
+}
+.item {
+  margin-inline: 10px;
+  white-space: nowrap;
 }
 header .menu {
   justify-content: space-between;
+}
+.presentation {
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+presentation .intro-text {
+  min-height: 200px;
+}
+.intro-text {
+  color: #122a57;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.intro-text a {
+  background-color: #122a57;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#quem-somos {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+#quem-somos h2 {
+  font-size: 32px;
+  color: #122a57;
+  display: flex;
+  margin-bottom: 20px;
+}
+#quem-somos h2::before {
+  content: "";
+  height: 50px;
+  width: 5px;
+  margin-right: 5px;
+  background-color: #122a57;
+  position: relative;
+}
+#quem-somos p {
+  margin-bottom: 10px;
+  width: 90%;
 }
