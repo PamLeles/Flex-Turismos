@@ -14,7 +14,7 @@ ul {
 ul li a {
   text-decoration: none;
 }
-div img {
+div section img {
   display: block;
   width: 100%;
 }
@@ -23,6 +23,7 @@ div img {
   max-width: 992px;
   margin: auto;
   width: 100%;
+  min-width: 320px;
 }
 
 header {
@@ -31,7 +32,10 @@ header {
   display: flex;
   align-items: center;
   color: #fff;
+  justify-content: space-between;
+  padding-inline: 60px;
 }
+
 header .list-items {
   display: flex;
   max-width: 260px;
@@ -49,18 +53,22 @@ header .list-items {
 header .menu {
   justify-content: space-between;
 }
-.presentation {
-  height: 100vh;
-  align-items: center;
-  justify-content: space-between;
-}
-presentation .intro-text {
-  min-height: 200px;
+.apresentacao {
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .intro-text {
   color: #122a57;
   font-size: 18px;
   margin-bottom: 10px;
+  min-height: 200px;
+  justify-content: center;
+}
+.intro-text > img {
+  width: 500px;
 }
 .btn {
   background-color: #122a57;
@@ -99,25 +107,32 @@ presentation .intro-text {
   width: 90%;
 }
 #quem-somos img {
-  min-width: 420px;
+  width: 500px;
 }
-.container-extern {
+.services-section {
   background-color: #122a57;
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 15px;
+  gap: 25px;
 }
+
 #services {
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 100px;
 }
-#services h2 {
+#services > h2 {
   color: #fff;
   font-size: 32px;
-  margin-bottom: 20px;
 }
 .list-of-services {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
 }
 .list-of-services .item-services {
   text-align: center;
@@ -148,11 +163,21 @@ presentation .intro-text {
 }
 #planos {
   flex-direction: column;
-  min-height: 100vh;
+  padding-top: 50px;
+  display: flex;
+  padding-bottom: 50px;
+}
+#planos h2 {
+  font-size: 32px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .list-planos {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 .item-plano {
   flex: 1;
@@ -160,6 +185,7 @@ presentation .intro-text {
   margin-right: 20px;
   align-content: center;
   padding: 10px;
+  max-width: 240px;
 }
 .item-plano .btn {
   margin: auto;
@@ -170,6 +196,7 @@ presentation .intro-text {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 20px;
 }
 .item-plano h3::after {
   content: "";
@@ -179,14 +206,114 @@ presentation .intro-text {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.lista {
-  flex-wrap: wrap;
-  flex-flow: column;
-  align-items: flex-start;
+.item-plano ul {
   padding: 10px 20px;
   display: flex;
-  list-style: square;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
 }
-.tittle-plan {
-  margin-top: 5px;
+.item-plano ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.item-plano ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #122a57;
+  margin-right: 5px;
+}
+footer {
+  background-color: #122a57;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+footer .footer {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+@media (max-width: 992px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #quem-somos img {
+    min-width: 320px;
+  }
+  #quem-somos h2 {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  .intro-text {
+    width: 100%;
+  }
+  #quem-somos {
+    flex-direction: column-reverse;
+    padding: 15px 20px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  #services {
+    align-items: center;
+    flex-direction: column;
+  }
+  .list-of-services {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .item-services img {
+    width: 40%;
+    margin: auto;
+  }
+  .list-planos {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .list-planos .item-plano {
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  .list-items {
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+  }
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #planos .h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: auto;
+  }
+  .text {
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .item-plano ul {
+  }
 }
