@@ -20,10 +20,6 @@ div section img {
 }
 .flex-container {
   display: flex;
-  max-width: 992px;
-  margin: auto;
-  width: 100%;
-  min-width: 320px;
 }
 
 header {
@@ -53,7 +49,7 @@ header .list-items {
 header .menu {
   justify-content: space-between;
 }
-.apresentacao {
+.presentation {
   align-items: flex-start;
   justify-content: center;
   display: flex;
@@ -83,18 +79,22 @@ header .menu {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#quem-somos {
+#about-us {
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 15px;
 }
-#quem-somos h2 {
+#about-us > div {
+  max-width: 500px;
+}
+#about-us h2 {
   font-size: 32px;
   color: #122a57;
   display: flex;
   margin-bottom: 20px;
 }
-#quem-somos h2::before {
+#about-us h2::before {
   content: "";
   height: 50px;
   width: 5px;
@@ -102,11 +102,10 @@ header .menu {
   background-color: #122a57;
   position: relative;
 }
-#quem-somos p {
+#about-us p {
   margin-bottom: 10px;
-  width: 90%;
 }
-#quem-somos img {
+#about-us img {
   width: 500px;
 }
 .services-section {
@@ -161,25 +160,25 @@ header .menu {
   width: 80%;
   margin: auto;
 }
-#planos {
+#plans {
   flex-direction: column;
   padding-top: 50px;
   display: flex;
   padding-bottom: 50px;
 }
-#planos h2 {
+#plans h2 {
   font-size: 32px;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.list-planos {
+.list-plans {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.item-plano {
+.plans-item {
   flex: 1;
   border: 2px solid #122a57;
   margin-right: 20px;
@@ -187,18 +186,18 @@ header .menu {
   padding: 10px;
   max-width: 240px;
 }
-.item-plano .btn {
+.plans-item .btn {
   margin: auto;
   margin-bottom: 20px;
 }
-.item-plano h3 {
+.plans-item h3 {
   font-size: 24px;
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: 20px;
 }
-.item-plano h3::after {
+.plans-item h3::after {
   content: "";
   background-color: #122a57;
   width: 100%;
@@ -206,19 +205,19 @@ header .menu {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.item-plano ul {
+.plans-item ul {
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 10px;
 }
-.item-plano ul li {
+.plans-item ul li {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
 }
-.item-plano ul li::before {
+.plans-item ul li::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -230,6 +229,7 @@ footer {
   height: 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 footer .footer {
   color: #fff;
@@ -239,22 +239,26 @@ footer .footer {
   gap: 7px;
 }
 @media (max-width: 992px) {
+  .header {
+    width: 100%;
+  }
   .flex-container {
     flex-direction: column;
     align-items: center;
   }
-  #quem-somos img {
+  #about-us img {
     min-width: 320px;
   }
-  #quem-somos h2 {
+  #about-us h2 {
     align-items: center;
     justify-content: center;
     padding: 5px;
   }
   .intro-text {
     width: 100%;
+    padding-top: 15px;
   }
-  #quem-somos {
+  #about-us {
     flex-direction: column-reverse;
     padding: 15px 20px;
     align-items: center;
@@ -274,14 +278,14 @@ footer .footer {
     width: 40%;
     margin: auto;
   }
-  .list-planos {
+  .list-plans {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 20px;
     justify-content: space-around;
-    width: 100%;
+    width: 50%;
   }
-  .list-planos .item-plano {
+  .list-plans .plans-item {
     max-width: 90%;
     margin: auto;
     width: 100%;
@@ -302,7 +306,7 @@ footer .footer {
     flex-direction: column;
     align-items: center;
   }
-  #planos .h2 {
+  #plans .h2 {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -314,6 +318,14 @@ footer .footer {
     align-items: center;
     padding: 5px;
   }
-  .item-plano ul {
+  .plans-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
