@@ -14,4 +14,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 você pode acessar a interface atraves da imagem abaixo ⬇⬇
 
-[![miniatura do app](https://github.com/PamLeles/Flex-Turismos/blob/main/images/miniatura-da-pagina.png)](flex-turismos-sepia.vercel.app)
+[![miniatura do app](https://github.com/PamLeles/Flex-Turismos/blob/main/images/miniatura-da-pagina.png)](https://flex-turismos-sepia.vercel.app/)
